@@ -2,7 +2,7 @@
 
 A simple yet powerful Flutter application powered by the Gemini API, designed to help users improve their English. It acts as an interactive English tutor that corrects grammar mistakes and provides examples or theory upon request.
 
-## ✨ Features
+## Features
 
 - **Grammar Correction**: Automatically analyzes user input and corrects English grammar. It uses strikethrough for incorrect words and bold for corrections.
 - **Detailed Explanations**: Provides in-depth explanations for multiple grammatical errors.
@@ -10,15 +10,15 @@ A simple yet powerful Flutter application powered by the Gemini API, designed to
 - **Markdown Rendering**: Beautifully renders AI responses using Markdown for clear readability.
 - **Minimalist UI**: Clean, distraction-free chat interface inspired by modern messaging apps.
 
-## 🛠 Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 - **Framework**: Flutter (Dart)
-- **AI Integration**: `google_generative_ai` (Gemini 1.5 Pro)
+- **AI Integration**: `google_generative_ai` (Gemini 3.1 flash lite)
 - **Environment Management**: `flutter_dotenv` (for secure API key storage)
 - **Typography**: `google_fonts` (using the 'Inter' font family)
 - **Text Rendering**: `flutter_markdown` (for rendering Gemini's markdown responses)
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 lib/
@@ -33,7 +33,7 @@ lib/
 └── main.dart                  # Application entry point
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -65,7 +65,7 @@ lib/
    flutter run
    ```
 
-## 🧠 System Prompt Architecture
+## System Prompt Architecture
 
 The Gemini model is initialized with specific **System Instructions** to act as an English expert. The prompt enforces:
 - Using `~~strikethrough~~` for mistakes and `**bold**` for corrections.
